@@ -1,0 +1,42 @@
+:root{
+    --cinza_33: #333333;
+    --cinza_33_op: #333333e8;
+    --cinza_33_op75: #333333bf;
+    --branco_ff: #FFFFFF;
+    --laranja_f9: #F9963B;
+    --preto_op: #000000cc;
+}
+
+
+.upper{
+    text-transform: uppercase;
+}
+
+.nav-link{
+    font-size: 0.87rem;
+}
+
+.font_cor{
+    color: var(--cinza_33);
+}
+
+.poppins{
+    font-family: 'Poppins';
+}
+
+.titulo{
+    font-weight: 800;
+}
+
+
+.vermais_main{
+    border: 2px solid black;
+    width: 12vw;
+    height: 2.8vw;
+    margin: 5vw 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 2vw;
+    background-color: var(--branco_ff);
+}
