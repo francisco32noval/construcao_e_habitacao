@@ -40,3 +40,12 @@
     border-radius: 2vw;
     background-color: var(--branco_ff);
 }
+
+.titulo_card{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.texto_card{
+    font-size: 1.1rem;
+}

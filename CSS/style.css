@@ -114,11 +114,24 @@
 
 /* DESTAQUES MAIN */
 
+/* .card *{
+    border: 1px solid red;
+} */
+
 .card{
+    width: 31vw;
     border: 1px solid black;
     border-radius: 0px;
 }
 
 .card img{
+    width: 100%;
     border-radius: 0px;
+    height: 50%;
+}
+
+.card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
