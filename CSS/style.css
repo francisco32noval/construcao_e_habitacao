@@ -165,7 +165,7 @@ footer{
 
 
 .contactos{
-    height: 35vw;
+    height: 32vw;
     background-image: url('../uploads/FooterContactos.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -174,5 +174,9 @@ footer{
 }
 
 .contactos > div:nth-child(1){
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contactos > div > div:nth-child(3){
+    margin-top: 5vw;
 }
