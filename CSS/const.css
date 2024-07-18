@@ -49,3 +49,20 @@
 .texto_card{
     font-size: 1.1rem;
 }
+
+.icon{
+    width: 3.5vw;
+    padding: 0.6vw;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.hr_footer{
+    border: none;
+    border-top: 3px solid white;
+    opacity: 1;
+    margin: auto;
+    margin-top: 8vw;
+    width: 5vw;
+}
+

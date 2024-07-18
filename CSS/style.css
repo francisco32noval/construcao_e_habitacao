@@ -119,7 +119,7 @@
 } */
 
 .card{
-    width: 31vw;
+    width: 20vw;
     border: 1px solid black;
     border-radius: 0px;
 }
@@ -134,4 +134,45 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+
+.card-body a{
+    border: 2px solid black;
+    border-radius: 2vw;
+    background-color: white;
+    padding: 0.4vw 2vw;
+    font-size: 1rem;
+}
+
+.card-body div:nth-child(3){
+    transform: translate(0px, 2.3vw);
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+    max-width: 1600px;
+    padding: 0px;
+    margin-top: 7vw;
+}
+
+
+.contactos{
+    height: 35vw;
+    background-image: url('../uploads/FooterContactos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.contactos > div:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.45);
 }
