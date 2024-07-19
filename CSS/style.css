@@ -2,9 +2,7 @@
     max-width: 1600px;
 }
 
-/* .collapse, .nav-item{
-    border: 1px solid black;
-} */
+
 
 
 
@@ -13,12 +11,17 @@
 
 /* NAVBAR */
 
-
+main *{
+    color: var(--cinza_33);
+}
 
 .navbar-nav a{
     font-size: 0.87rem;
 }
 
+.nav-link:hover{
+    font-weight: 700;
+}
 
 .navbar-nav .nav-link{
     /* border: 1px solid black; */
@@ -43,17 +46,27 @@
 }
 
 .dropdown-menu{
-    transform: translate(0vw, 1.5vw);
+    transform: translate(0.1vw, 1vw);
     border-radius: 0px;
-    max-width: 238px;
+    width: 238px;
     background-color: var(--cinza_33_op);
     padding: 0px;
 }
 
 .dropdown-menu a{
-    padding: 0.5rem;
+    padding: 0.9rem;
 }
 
+.dropdown-item{
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.dropdown-menu a:hover{
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--cinza_33_op);
+}
 
 .dropdown-divider{
     height: 0;
@@ -164,8 +177,10 @@ footer{
 }
 
 
+/* FOOTER CONTACTOS */
+
 .contactos{
-    height: 32vw;
+    height: 565px;
     background-image: url('../uploads/FooterContactos.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -180,3 +195,28 @@ footer{
 .contactos > div > div:nth-child(3){
     margin-top: 5vw;
 }
+
+
+
+
+/* FOOTER FACEBOOK + NAV */
+
+.facebook{
+    background-image: url('../uploads/FooterFacebook.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+
+.facebook > div:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hr_footer2{
+    border: none;
+    border-top: 2px solid white;
+    opacity: 1;
+}
+

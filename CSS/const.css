@@ -41,6 +41,11 @@
     background-color: var(--branco_ff);
 }
 
+.vermais_main:hover, .card-body a:hover{
+    background-color: black;
+    color: white;
+}
+
 .titulo_card{
     font-weight: 500;
     font-size: 1.5rem;
@@ -66,3 +71,20 @@
     width: 5vw;
 }
 
+.fb_icon{
+    width: 7vw;
+    padding: 0.9vw;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.nav_footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    padding: 0vw 0.4vw;
+}
+
+.nav_footer a:hover{
+    color: var(--laranja_f9);
+}
