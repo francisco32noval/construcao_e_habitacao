@@ -3,7 +3,7 @@
 }
 
 
-
+/* body *{border: 1px solid black;} */
 
 
 
@@ -17,6 +17,10 @@ main *{
 
 .navbar-nav a{
     font-size: 0.87rem;
+}
+
+.nav-item{
+    white-space: nowrap;
 }
 
 .nav-link:hover{
@@ -127,41 +131,16 @@ main *{
 
 /* DESTAQUES MAIN */
 
-/* .card *{
-    border: 1px solid red;
-} */
 
 .card{
-    width: 20vw;
     border: 1px solid black;
     border-radius: 0px;
+    margin: 25px 0px;
 }
 
 .card img{
-    width: 100%;
     border-radius: 0px;
-    height: 50%;
 }
-
-.card-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.card-body a{
-    border: 2px solid black;
-    border-radius: 2vw;
-    background-color: white;
-    padding: 0.4vw 2vw;
-    font-size: 1rem;
-}
-
-.card-body div:nth-child(3){
-    transform: translate(0px, 2.3vw);
-}
-
 
 
 
@@ -219,4 +198,3 @@ footer{
     border-top: 2px solid white;
     opacity: 1;
 }
-
