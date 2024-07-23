@@ -56,6 +56,6 @@
 
     .copy{
         margin-top: 0px !important;
-        text-align: center;
+        text-align: center !important;
     }
 }
