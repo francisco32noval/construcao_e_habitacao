@@ -159,7 +159,7 @@ footer{
 /* FOOTER CONTACTOS */
 
 .contactos{
-    height: 565px;
+    height: 530px;
     background-image: url('../uploads/FooterContactos.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -191,6 +191,10 @@ footer{
 
 .facebook > div:nth-child(1){
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.facebook a{
+    font-size: 1em;
 }
 
 .hr_footer2{

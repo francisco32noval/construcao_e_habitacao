@@ -10,10 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="CSS/media.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="CSS/const.css">
-    <link rel="stylesheet" href="media.css">
+    
 
     <!-- RECAPTCHA -->
     <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
@@ -195,7 +196,7 @@
         <div class="row">
 
             <div class="col-12 text-center">
-                <button class="vermais_main">ver mais</button>
+                <div class="text-center"><a href="#" class="btn vermais_main upper px-4">ver mais</a></div>
             </div>
 
         </div>
@@ -230,7 +231,7 @@
                     <div class="card-body">
                       <h5 class="titulo_card">Canidelo - Vila Nova de Gaia</h5>
                       <p class="texto_card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="text-center"><a href="#" class="btn upper px-4">ver mais</a></div>
+                      <div class="text-center"><a href="#" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
                     </div>
                 </div>
             </div>
@@ -241,7 +242,7 @@
                     <div class="card-body">
                       <h5 class="titulo_card">Canidelo - Vila Nova de Gaia</h5>
                       <p class="texto_card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="text-center"><a href="#" class="btn upper px-4">ver mais</a></div>
+                      <div class="text-center"><a href="#" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
                     </div>
                 </div>
             </div>
@@ -252,7 +253,7 @@
                     <div class="card-body">
                       <h5 class="titulo_card">Canidelo - Vila Nova de Gaia</h5>
                       <p class="texto_card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="text-center"><a href="#" class="btn upper px-4">ver mais</a></div>
+                      <div class="text-center"><a href="#" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
                     </div>
                 </div>
             </div>
@@ -263,7 +264,7 @@
                     <div class="card-body">
                       <h5 class="titulo_card">Canidelo - Vila Nova de Gaia</h5>
                       <p class="texto_card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="text-center"><a href="#" class="btn upper px-4">ver mais</a></div>
+                      <div class="text-center"><a href="#" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
                     </div>
                 </div>
             </div>
@@ -274,7 +275,7 @@
                     <div class="card-body">
                       <h5 class="titulo_card">Canidelo - Vila Nova de Gaia</h5>
                       <p class="texto_card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="text-center"><a href="#" class="btn upper px-4">ver mais</a></div>
+                      <div class="text-center"><a href="#" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
                     </div>
                 </div>
             </div>
@@ -285,7 +286,7 @@
                     <div class="card-body">
                       <h5 class="titulo_card">Canidelo - Vila Nova de Gaia</h5>
                       <p class="texto_card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="text-center"><a href="#" class="btn upper px-4">ver mais</a></div>
+                      <div class="text-center"><a href="#" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
                     </div>
                 </div>
             </div>
@@ -313,34 +314,35 @@
 
             <div class="col p-0">
 
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-12">
                         <hr class="hr_footer">
                     </div>
                 </div>
 
                 <div class="row my-5">
-                    <div class="col-12 text-center poppins fs-2">
+                    <div class="col-12 text-center poppins fs-3">
                         Contactos
                     </div>
                 </div>
 
-                <div class="row text-center d-flex justify-content-center">
+                <div class="row contactos_2">
 
-                    <div class="col-3 text-center d-flex flex-column gap-4">
+                    <div class="col-12 col-md-3 text-center d-flex flex-column gap-3">
                         <div><img src="uploads/phone.png" alt="contacto" class="icon"></div>
-                        <div><p class="fs-5">222 088 761</p></div>
+                        <div><p class="fs-6 poppins">222 088 761</p></div>
                     </div>
 
-                    <div class="col-3 text-center d-flex flex-column gap-4">
+                    <div class="col-12 col-md-3 text-center d-flex flex-column gap-3">
                         <div><img src="uploads/location-2.png" alt="local" class="icon"></div>
-                        <div><p class="fs-5">Rua Passos Manuel, 59-1.º 4000-384 Porto</p></div>
+                        <div><p class="fs-6 poppins">Rua Passos Manuel, 59-1.º 4000-384 Porto</p></div>
                     </div>
 
-                    <div class="col-3 text-center d-flex flex-column gap-4">
+                    <div class="col-12 col-md-3 text-center d-flex flex-column gap-3">
                         <div><img src="uploads/mail.png" alt="mail" class="icon"></div>
-                        <div><p class="fs-5">cooptripeira@mail.telepac.pt</p></div>
+                        <div class="w-auto"><p class="fs-6 poppins">cooptripeira@mail.telepac.pt</p></div>
                     </div>
+
                 </div>
                 
             </div>            
@@ -384,7 +386,7 @@
                     <hr class="col-12 hr_footer2">
                 </div>
 
-                <div class="row mt-4">
+                <div class="row mt-4 d-none d-md-block">
                     <div class="col-11 text-end nav_footer pt-3">
                         <a href="#" class="poppins upper">home</a>
                         <a href="#" class="poppins upper">quem somos</a>
@@ -399,7 +401,7 @@
 
 
                 <div class="row">
-                    <div class="col-6 mt-5 text-end copy">
+                    <div class="col-12 col-md-8 mt-5 copy fs-6 text-end">
                         Copyright &copy; 2024 Grupo MediaMaster. Todos os direitos reservados. 
                     </div>
                 </div>

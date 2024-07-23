@@ -31,15 +31,10 @@
 
 .vermais_main{
     border: 2px solid black;
-    width: 11.5vw;
-    height: 2.8vw;
-    margin: 5vw 0vw;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1em;
-    border-radius: 2vw;
-    background-color: var(--branco_ff);
     white-space: nowrap;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-top: 25px;
 }
 
 .vermais_main:hover, .card-body a:hover{
@@ -56,11 +51,12 @@
     font-size: 1.1rem;
 }
 
-.btn{
+.ver_mais_destaques{
     border: 2px solid black;
     border-radius: 20px;
     background-color: white;
     transform: translate(0px, 35px);
+    font-size: 0.8rem;
 }
 
 
@@ -75,9 +71,14 @@
 }
 
 
+
+
+
+
+
 /* footer */
 .icon{
-    width: 3.5vw;
+    width: 25%;
     padding: 0.6vw;
     border: 3px solid white;
     border-radius: 50%;
@@ -89,8 +90,16 @@
     opacity: 1;
     margin: auto;
     margin-top: 8vw;
-    width: 5vw;
+    width: 5%;
 }
+
+
+.contactos_2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 
 .fb_icon{
     width: 7vw;
