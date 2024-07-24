@@ -12,8 +12,8 @@
     text-transform: uppercase;
 }
 
-.nav-link{
-    font-size: 0.87rem;
+.nav-item a{
+    font-size: 1vw;
 }
 
 .font_cor{
@@ -78,7 +78,7 @@
 
 /* footer */
 .icon{
-    width: 25%;
+    width: 22%;
     padding: 0.6vw;
     border: 3px solid white;
     border-radius: 50%;

@@ -3,11 +3,6 @@
 }
 
 
-/* body *{border: 1px solid black;} */
-
-
-
-
 
 /* NAVBAR */
 
@@ -15,8 +10,8 @@ main *{
     color: var(--cinza_33);
 }
 
-.navbar-nav a{
-    font-size: 0.87rem;
+.nav-link{
+    padding: 0px;
 }
 
 .nav-item{
