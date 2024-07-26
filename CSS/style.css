@@ -143,17 +143,9 @@ main *{
 
 /* NOTICIAS MAIN */
 
-.card_noticias{
-    width: 90%;
-}
 
-.card_noticias img{
-    height: 357px;
-}
 
-.noticia_1 *{
-    border: 1px solid black;
-}
+
 
 
 
