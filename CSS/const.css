@@ -37,7 +37,7 @@
     margin-top: 25px;
 }
 
-.vermais_main:hover, .card-body a:hover{
+.vermais_main:hover, .card-body a:hover, .botao_esp:hover{
     background-color: black;
     color: white;
 }
