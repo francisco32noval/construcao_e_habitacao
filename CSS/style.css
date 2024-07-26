@@ -120,7 +120,7 @@ main *{
     border-top: 3px solid #F9963B;
     opacity: 1;
     margin: auto;
-    width: 10%;
+    width: 5rem;
 }
 
 
@@ -136,6 +136,29 @@ main *{
 .card img{
     border-radius: 0px;
 }
+
+
+
+
+
+/* NOTICIAS MAIN */
+
+.card_noticias{
+    width: 90%;
+}
+
+.card_noticias img{
+    height: 357px;
+}
+
+.noticia_1 *{
+    border: 1px solid black;
+}
+
+
+
+
+
 
 
 
