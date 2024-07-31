@@ -73,8 +73,8 @@ $quem_somos_home = getQuemSomos();
 
             <?php foreach($destaques_home as $d): ?>
 
-                <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                    <div class="card" style="width: 90%;">
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <div class="card" style="width: 70%;">
                         <img src="<?= $d["imagem"]; ?>" class="card-img-top" alt="destaque<?= $d["id"] ?>">
                         <div class="card-body">
                         <h5 class="titulo_card"><?= $d["titulo"]; ?></h5>
