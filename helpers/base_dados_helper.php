@@ -2,7 +2,7 @@
 
 
 $host = "localhost";
-$dbname = "codemaster_9_construcao";
+$dbname = "construcao_codemaster_9_db";
 $user = "root";
 $pass = "";
 $conexao = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4;", $user, $pass);
