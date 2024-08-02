@@ -61,7 +61,7 @@ $contactos = getContactos();
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
 
                                 <li class="nav-item">
-                                    <a class="nav-link active upper font_cor poppins px-1" id="especial" aria-current="page" href="#">home</a>
+                                    <a class="nav-link active upper font_cor poppins px-1" id="especial" aria-current="page" href="index.php">home</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -77,7 +77,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="#">sócios</a>
+                                    <a class="nav-link upper font_cor poppins px-1" href="socios.php">sócios</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -93,7 +93,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="#">destaques</a>
+                                    <a class="nav-link upper font_cor poppins px-1" href="destaques.php">destaques</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">

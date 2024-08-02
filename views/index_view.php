@@ -73,15 +73,17 @@ $quem_somos_home = getQuemSomos();
 
             <?php foreach($destaques_home as $d): ?>
 
-                <div class="col-12 col-sm-6 d-flex justify-content-center">
-                    <div class="card" style="width: 70%;">
-                        <img src="<?= $d["imagem"]; ?>" class="card-img-top" alt="destaque<?= $d["id"] ?>">
+                <div class="col-12 col-md-5">
+
+                    <div class="card">
+                        <img src="<?= $d["imagem"];?>" class="card-img-top" alt="destaque1">
                         <div class="card-body">
-                        <h5 class="titulo_card"><?= $d["titulo"]; ?></h5>
-                        <p class="texto_card"><?= substr($d["texto"], 0, 100); ?></p>
-                        <div class="text-center"><a href="destaque_especifico.php?id=<?= $d["id"]; ?>" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
+                            <h5 class="titulo_card"><?= $d["titulo"];?></h5>
+                            <p class="texto_card"><?= substr($d["texto"], 0, 50);?></p>
+                            <div class="text-center"><a href="destaque_especifico.php?id=<?= $d["id"]; ?>" class="btn upper px-4 ver_mais_destaques">ver mais</a></div>
                         </div>
                     </div>
+
                 </div>
 
             <?php endforeach; ?>
