@@ -85,6 +85,18 @@
 
 
 
+.paginacao_botao{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0px 7px;
+}
+
+.paginacao_botao:hover{
+    background-color: black;
+    color: white;
+}
+
 
 /* footer */
 .icon{
