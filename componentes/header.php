@@ -69,7 +69,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="#">quem somos</a>
+                                    <a class="nav-link upper font_cor poppins px-1" href="quem_somos.php">quem somos</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
