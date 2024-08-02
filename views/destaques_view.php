@@ -64,7 +64,7 @@ $destaques = getDestaquesPagina($pagina);
             <div class="col-12 text-center d-flex gap-3 justify-content-center">
 
                 <?php for($i=1; $i<=$total_paginas; $i++): ?>
-                    <a href="destaques.php?pagina=<?= $i; ?>" class="paginacao_botao poppins font_cor"><?= $i; ?></a>
+                    <a href="destaques.php?pagina=<?= $i; ?>" class="paginacao_botao poppins"><?= $i; ?></a>
                 <?php endfor; ?>
 
             </div>
