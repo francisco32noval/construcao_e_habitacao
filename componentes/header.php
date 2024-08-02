@@ -152,24 +152,23 @@ $contactos = getContactos();
                 <div id="carouselExampleIndicators" class="carousel slide">
 
                     <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                        <?php foreach($carousel as $i => $c): ?>
+
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?= $i; ?>" <?= ($i==0) ? 'class="active" aria-current="true"' : ""; ?> aria-label="Slide <?= $i+1;?>"></button>
+
+                        <?php endforeach; ?>
                     </div>
 
                     <div class="carousel-inner">
 
-                        <div class="carousel-item active">
-                            <img src="uploads/BannerContactos.png" alt="contactos">
-                        </div>
+                        <?php foreach($carousel as $i => $c): ?>
 
-                        <div class="carousel-item active">
-                            <img src="uploads/BannerDestaques.png" alt="Dest">
-                        </div>
+                            <div class="carousel-item <?= ($i==0) ? "active" : ""; ?>">
+                                <img src="<?= $c["imagem"]; ?>" alt="contactos">
+                            </div>
 
-                        <div class="carousel-item active">
-                            <img src="uploads/BannerDestaque1.png" alt="Dest1">
-                        </div>
+                        <?php endforeach; ?>
 
                     </div>
                     
