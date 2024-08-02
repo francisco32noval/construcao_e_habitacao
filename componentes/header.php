@@ -105,16 +105,16 @@ $contactos = getContactos();
                                         empreendedimentos
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item text-white upper poppins" href="#">Action</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item text-white upper poppins" href="#">Barranha - S.ª da hora matosinhos</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item text-white upper poppins" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item text-white upper poppins" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item text-white upper poppins" href="#">Something else here</a></li>
+
+                                        <?php foreach($empreendimentos as $e): ?>
+
+                                            <li><a class="dropdown-item text-white upper poppins" href="empreendedimentos.php?id=<?= $e["id"]; ?>"><?= $e["titulo"]; ?></a></li>
+                                            <li><hr class="dropdown-divider <?= ($e == end($empreendimentos)) ? "d-none" : ""; ?>"></li>
+
+                                        <?php endforeach; ?>
+
                                     </ul>
+
                                 </li>
 
                                 <li class="d-block d-lg-none">
