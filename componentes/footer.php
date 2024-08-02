@@ -25,17 +25,17 @@
 
                     <div class="col-12 col-lg-3 text-center d-flex flex-column gap-3">
                         <div><img src="uploads/phone.png" alt="contacto" class="icon"></div>
-                        <div><p class="fs-6 poppins">222 088 761</p></div>
+                        <div><p class="fs-6 poppins"><?= $contactos["telefone"]; ?></p></div>
                     </div>
 
                     <div class="col-12 col-lg-3 text-center d-flex flex-column gap-3">
                         <div><img src="uploads/location-2.png" alt="local" class="icon"></div>
-                        <div><p class="fs-6 poppins">Rua Passos Manuel, 59-1.º 4000-384 Porto</p></div>
+                        <div><p class="fs-6 poppins"><?= $contactos["morada"]; ?></p></div>
                     </div>
 
                     <div class="col-12 col-lg-3 text-center d-flex flex-column gap-3">
                         <div><img src="uploads/mail.png" alt="mail" class="icon"></div>
-                        <div class="w-auto"><p class="fs-6 poppins">cooptripeira@mail.telepac.pt</p></div>
+                        <div class="w-auto"><p class="fs-6 poppins"><?= $contactos["email"]; ?></p></div>
                     </div>
 
                 </div>
@@ -69,7 +69,7 @@
 
                     <div class="col-12 text-center d-flex flex-column mt-4 pt-2">
 
-                        <div class="mb-3"><img src="uploads/facebook.png" alt="facebook" class="fb_icon"></div>
+                        <div class="mb-3"><a href="<?= $contactos["link_facebook"]; ?>" target="blank"><img src="uploads/facebook.png" alt="facebook" class="fb_icon"></a></div>
 
                         <div class="poppins fs-3 mt-4">Siga-nos no Facebook</div>
 
