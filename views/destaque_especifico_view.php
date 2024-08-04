@@ -31,13 +31,13 @@ if($form){
             </div>
 
             <div class="col-12 text-center poppins fs-4 fw-medium">
-                <?= $destaque_especifico["titulo"] ?>
+                <?= $destaque_especifico["titulo"]; ?>
             </div>
 
             <div class="col-12 mt-5">
 
                 <p class="poppins">
-                    <?= $destaque_especifico["texto"] ?>
+                    <?= $destaque_especifico["texto"]; ?>
                 </p>
 
                         

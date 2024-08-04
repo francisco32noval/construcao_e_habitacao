@@ -102,13 +102,13 @@ $contactos = getContactos();
 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link upper font_cor poppins px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        empreendedimentos
+                                        empreendimentos
                                     </a>
                                     <ul class="dropdown-menu">
 
                                         <?php foreach($empreendimentos as $e): ?>
 
-                                            <li><a class="dropdown-item text-white upper poppins" href="empreendedimentos.php?id=<?= $e["id"]; ?>"><?= $e["titulo"]; ?></a></li>
+                                            <li><a class="dropdown-item text-white upper poppins" href="empreendimentos.php?id=<?= $e["id"]; ?>"><?= $e["titulo"]; ?></a></li>
                                             <li><hr class="dropdown-divider <?= ($e == end($empreendimentos)) ? "d-none" : ""; ?>"></li>
 
                                         <?php endforeach; ?>
