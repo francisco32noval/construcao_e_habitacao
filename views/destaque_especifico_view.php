@@ -1,4 +1,12 @@
+<?php
 
+$form = isset($_GET["id"]);
+if($form){
+  $id = $_GET["id"];
+  $destaque_especifico = getDestaqueEspecifico($id);
+}
+
+?>
 
 
     <!-- MAIN -->
@@ -23,36 +31,22 @@
             </div>
 
             <div class="col-12 text-center poppins fs-4 fw-medium">
-                Canidelo - Vila Nova de Gaia
+                <?= $destaque_especifico["titulo"] ?>
             </div>
 
             <div class="col-12 mt-5">
 
                 <p class="poppins">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis? 
-                    Culpa quasi, quam animi neque aliquam sed sint recusandae quae! Ex reprehenderit 
-                    perspiciatis ullam, culpa fugiat est? Beatae. Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Saepe natus dolor nobis? Culpa quasi, quam animi neque aliquam sed 
-                    sint recusandae quae! Ex reprehenderit perspiciatis ullam, culpa fugiat est? Beatae. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <?= $destaque_especifico["texto"] ?>
                 </p>
 
-                <p class="poppins">
-                    Saepe natus dolor nobis? Culpa quasi, quam animi neque aliquam sed sint recusandae quae!
-                        Ex reprehenderit perspiciatis ullam, culpa fugiat est? Beatae. Lorem ipsum dolor sit 
-                        amet consectetur adipisicing elit. Saepe natus dolor nobis? Culpa quasi, quam animi 
-                        neque aliquam sed sint recusandae quae! Ex reprehenderit perspiciatis ullam, culpa fugiat est? 
-                        Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis? 
-                        Culpa quasi, quam animi neque aliquam sed sint recusandae quae! Ex reprehenderit perspiciatis 
-                        ullam, culpa fugiat est? Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe 
-                        natus dolor nobis? Culpa quasi.
-                    </p>        
+                        
             </div>
 
 
             <div class="row mt-5">
 
-                <div class="col-12 text-end"><a href="destaques.html" class="upper poppins botao_esp py-3 px-4 font_cor">voltar para destaques</a></div>
+                <div class="col-12 text-end"><a href="destaques.php" class="upper poppins botao_esp py-3 px-4 font_cor">voltar para destaques</a></div>
                 
             </div>
         </div>       
