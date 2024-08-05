@@ -142,40 +142,51 @@ $contactos = getContactos();
 
         </div>
 
+        <?php if($menu_atual == "home"): ?>
 
-        <div class="row">
+            <div class="row">
 
-            <!-- CAROUSEL -->
+                <!-- CAROUSEL -->
 
-            <div class="col-12 p-0">
+                <div class="col-12 p-0">
 
-                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div id="carouselExampleIndicators" class="carousel slide">
 
-                    <div class="carousel-indicators">
+                        <div class="carousel-indicators">
 
-                        <?php foreach($carousel as $i => $c): ?>
+                            <?php foreach($carousel as $i => $c): ?>
 
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?= $i; ?>" <?= ($i==0) ? 'class="active" aria-current="true"' : ""; ?> aria-label="Slide <?= $i+1;?>"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?= $i; ?>" <?= ($i==0) ? 'class="active" aria-current="true"' : ""; ?> aria-label="Slide <?= $i+1;?>"></button>
 
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <?php foreach($carousel as $i => $c): ?>
+
+                                <div class="carousel-item <?= ($i==0) ? "active" : ""; ?>">
+                                    <img src="<?= $c["imagem"]; ?>" alt="contactos">
+                                </div>
+
+                            <?php endforeach; ?>
+
+                        </div>
+                        
                     </div>
 
-                    <div class="carousel-inner">
-
-                        <?php foreach($carousel as $i => $c): ?>
-
-                            <div class="carousel-item <?= ($i==0) ? "active" : ""; ?>">
-                                <img src="<?= $c["imagem"]; ?>" alt="contactos">
-                            </div>
-
-                        <?php endforeach; ?>
-
-                    </div>
-                    
                 </div>
 
             </div>
 
-        </div>
+        <?php else: ?>
+
+            <div class="row">
+                <div class="col-12 px-0">
+                    <img src="uploads/BannerContactos.png" alt="quem" class="imagem_banner">
+                </div>
+            </div>
+
+        <?php endif; ?>
 
     </header>

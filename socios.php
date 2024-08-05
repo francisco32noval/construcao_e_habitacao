@@ -1,6 +1,6 @@
 <?php
 
-// $menu_atual = "quem_somos";
+$menu_atual = "quem_somos";
 
 require_once("requisicoes.php");
 
