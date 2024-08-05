@@ -42,7 +42,7 @@ $quem_somos_home = getQuemSomos();
         <div class="row">
 
             <div class="col-12 text-center">
-                <div class="text-center"><a href="#" class="btn vermais_main upper px-4">ver mais</a></div>
+                <div class="text-center"><a href="destaques.php" class="btn vermais_main upper px-4">ver mais</a></div>
             </div>
 
         </div>
