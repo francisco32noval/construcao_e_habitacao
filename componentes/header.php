@@ -32,7 +32,7 @@ $contactos = getContactos();
 
 </head>
 
-<body>
+<body onload="scrollAutomatico('<?= $menu_atual; ?>')">
 
     <!-- HEADER -->
 
@@ -69,7 +69,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="quem_somos.php">quem somos</a>
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "quem_somos") ? "active" : ""; ?>" href="quem_somos.php">quem somos</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -101,7 +101,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link upper font_cor poppins px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link upper font_cor poppins px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="link_empreendimentos">
                                         empreendimentos
                                     </a>
                                     <ul class="dropdown-menu">

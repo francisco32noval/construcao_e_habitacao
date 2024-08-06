@@ -44,6 +44,11 @@ main *{
     transform: scaleX(1);
 }
 
+
+.navbar-nav .nav-link .active::after {
+    transform: scaleX(1);
+}
+
 .dropdown-menu{
     transform: translate(0.1vw, 1vw);
     border-radius: 0px;
