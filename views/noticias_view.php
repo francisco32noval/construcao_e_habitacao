@@ -1,7 +1,18 @@
-<?php
+<?php 
 
-$noticias = getNoticias();
+// $noticias = getNoticias();
 
+$total_paginas = getTotalPaginasNoticias();
+$pagina = 1;
+
+$form = isset($_GET["pagina"]);
+if($form){
+  $pagina = intval($_GET["pagina"]);
+  if($pagina < 1){$pagina = 1;}
+  elseif($pagina > $total_paginas){$pagina = $total_paginas;}
+}
+
+$noticias = getNoticiasPagina($pagina);
 
 ?>
     <!-- MAIN -->
@@ -31,7 +42,7 @@ $noticias = getNoticias();
         <div class="row d-flex justify-content-center">
 
             <?php foreach($noticias as $n): ?>
-                
+
                 <div class="col-12 col-md-5 m-2">
 
                     <div class="card">
@@ -57,6 +68,15 @@ $noticias = getNoticias();
         </div>
 
 
+        <div class="row mt-5">
+            <div class="col-12 text-center d-flex gap-3 justify-content-center">
+
+                <?php for($i=1; $i<=$total_paginas; $i++): ?>
+                    <a href="noticias.php?pagina=<?= $i; ?>" class="paginacao_botao poppins"><?= $i; ?></a>
+                <?php endfor; ?>
+
+            </div>
+        </div>
             
         
     </main>
