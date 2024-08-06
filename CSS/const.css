@@ -78,7 +78,7 @@
 
 .input_contactos input, .input_contactos textarea{
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
     padding: 5px;
 }
 
@@ -96,6 +96,26 @@
     background-color: black;
     color: white;
 }
+
+
+
+
+
+/* CONTACTOS */
+
+
+.unico{
+    font-size: 12px;
+}
+
+.unico label{
+    width: 100%;
+}
+
+.unico input{
+    width: fit-content;
+}
+
 
 
 /* footer */

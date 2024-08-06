@@ -5,7 +5,7 @@
 
         <!-- CONTACTOS -->
 
-        <div class="row contactos">
+        <div class="row contactos mx-0">
 
             <div class="col p-0">
 
@@ -47,7 +47,7 @@
 
         <!-- MAPA -->
 
-        <div class="row my-3">
+        <div class="row my-3 mx-0">
 
 
             <div class="col-12 p-0 ">
@@ -60,14 +60,14 @@
 
         <!-- FACEBOOK -->
 
-        <div class="row facebook">
+        <div class="row facebook mx-0">
 
-            <div class="col 12 p-0">
+            <div class="col 12 p-0 mx-0">
 
 
-                <div class="row pt-5 pb-3">
+                <div class="row pt-5 pb-3 mx-0">
 
-                    <div class="col-12 text-center d-flex flex-column mt-4 pt-2">
+                    <div class="col-12 text-center d-flex flex-column mt-4 pt-2 mx-0">
 
                         <div class="mb-3"><a href="<?= $contactos["link_facebook"]; ?>" target="blank"><img src="uploads/facebook.png" alt="facebook" class="fb_icon"></a></div>
 
