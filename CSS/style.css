@@ -45,8 +45,8 @@ main *{
 }
 
 
-.navbar-nav .nav-link .active::after {
-    transform: scaleX(1);
+.active::after {
+    transform: scaleX(1) !important;
 }
 
 .dropdown-menu{

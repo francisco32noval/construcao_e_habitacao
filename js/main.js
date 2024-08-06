@@ -5,9 +5,9 @@ function clicarEmpreendimentos(){
   link_empreendimentos.click();
 }
 
-function scrollAutomatico(menu_atual){
+function getScroll(menu_atual){
   if(menu_atual != "home"){
-    let main = document.querySelector("main");
+    let main = document.querySelectorAll("main");
     main.scrollIntoView();
   }
 }

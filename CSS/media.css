@@ -190,3 +190,18 @@
         text-align: center !important;
     }
 }
+
+
+@media all and (width < 1200px) {
+    .navbar-nav .nav-link::after{
+        content: '';
+        position: absolute;
+        width: 90%;
+        transform: scaleX(0);
+        height: 5px;
+        bottom: -10px !important;
+        left: 3px;
+        background-color: var(--cinza_33);
+    }
+
+}

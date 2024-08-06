@@ -30,9 +30,10 @@ $contactos = getContactos();
     <!-- LOCAL JS -->
     <script src="js/main.js" defer></script>
 
+
 </head>
 
-<body onload="scrollAutomatico('<?= $menu_atual; ?>')">
+<body onload="getScroll('<?= $menu_atual; ?>')">
 
     <!-- HEADER -->
 
@@ -61,7 +62,7 @@ $contactos = getContactos();
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
 
                                 <li class="nav-item">
-                                    <a class="nav-link active upper font_cor poppins px-1" id="especial" aria-current="page" href="index.php">home</a>
+                                    <a class="nav-link <?= ($menu_atual == "home") ? "active" : ""; ?> upper font_cor poppins px-1" id="especial" aria-current="page" href="index.php">home</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -77,7 +78,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="socios.php">sócios</a>
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="socios.php">sócios</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -85,7 +86,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="noticias.php">notícias</a>
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "noticias") ? "active" : ""; ?>" href="noticias.php">notícias</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -93,7 +94,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="destaques.php">destaques</a>
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "destaques") ? "active" : ""; ?>" href="destaques.php">destaques</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -101,7 +102,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link upper font_cor poppins px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="link_empreendimentos">
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "empreendimentos") ? "active" : ""; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="link_empreendimentos">
                                         empreendimentos
                                     </a>
                                     <ul class="dropdown-menu">
@@ -122,7 +123,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="#">centro de férias</a>
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "centro_de_ferias") ? "active" : ""; ?>" href="#">centro de férias</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
@@ -130,7 +131,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1" href="contactos.php">contactos</a>
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "contactos") ? "active" : ""; ?>" href="contactos.php">contactos</a>
                                 </li>
 
                             </ul>
