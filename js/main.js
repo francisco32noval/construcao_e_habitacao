@@ -7,7 +7,7 @@ function clicarEmpreendimentos(){
 
 function getScroll(menu_atual){
   if(menu_atual != "home"){
-    let main = document.querySelectorAll("main");
+    let main = document.querySelector("main");
     main.scrollIntoView();
   }
 }

@@ -23,7 +23,6 @@ main *{
 }
 
 .navbar-nav .nav-link{
-    /* border: 1px solid black; */
     transform: translate(0vw, 0.7vw);
     position: relative;
     display: inline-block;
