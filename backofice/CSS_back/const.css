@@ -1,5 +1,5 @@
 :root{
-    --cinza_33: #333333;
+    --cinza_33: rgb(51, 51, 51);
     --cinza_33_op: #333333e8;
     --cinza_33_op75: #333333bf;
     --branco_ff: #FFFFFF;
@@ -12,151 +12,13 @@
     text-transform: uppercase;
 }
 
-.nav-item a{
-    font-size: 1vw;
-}
-
-.font_cor{
-    color: var(--cinza_33);
-}
-
 .poppins{
     font-family: 'Poppins';
 }
 
-.titulo{
-    font-weight: 800;
-}
-
-
-.vermais_main{
-    border: 2px solid black;
-    white-space: nowrap;
-    border-radius: 20px;
-    font-size: 1rem;
-    margin-top: 25px;
-}
-
-.vermais_main:hover, .card-body a:hover, .botao_esp:hover{
-    background-color: black;
-    color: white;
-}
-
-.titulo_card{
-    font-weight: 500;
-    font-size: 1.5rem;
-}
-
-.texto_card{
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-}
-
-.ver_mais_destaques{
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color: white;
-    transform: translate(0px, 35px);
-    font-size: 0.8rem;
-}
-
-
-
-
-
-/* header */
-
-.imagem_banner{
-    width: 100%;
-    height: 30vw;
-}
-
-
-
-
-/* MAIN */
-
-.input_contactos input, .input_contactos textarea{
-    border-radius: 10px;
-    width: 100%;
-    padding: 5px;
-}
-
-
-
-
-.paginacao_botao{
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 0px 7px;
-}
-
-.paginacao_botao:hover{
-    background-color: black;
-    color: white;
-}
-
-
-
-
-
-/* CONTACTOS */
-
-
-.unico{
-    font-size: 12px;
-}
-
-.unico label{
-    width: 100%;
-}
-
-.unico input{
-    width: fit-content;
-}
-
-
-
-/* footer */
-.icon{
-    width: 22%;
-    padding: 0.6vw;
-    border: 3px solid white;
-    border-radius: 50%;
-}
-
-.hr_footer{
-    border: none;
-    border-top: 3px solid white;
-    opacity: 1;
+table, th, td{
+    border: 2px dotted rgb(51, 51, 51);
+    border-collapse: collapse;
     margin: auto;
-    margin-top: 8vw;
-    width: 5%;
-}
-
-
-.contactos_2{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-
-.fb_icon{
-    width: 7vw;
-    padding: 0.9vw;
-    border: 3px solid white;
-    border-radius: 50%;
-}
-
-.nav_footer a{
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-    padding: 0vw 0.4vw;
-}
-
-.nav_footer a:hover{
-    color: var(--laranja_f9);
-}
+    padding: 10px;
+  }
