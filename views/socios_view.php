@@ -1,4 +1,9 @@
+<?php
 
+$socios = getSocios();
+
+
+?>
     <main class="container">
 
 
@@ -12,35 +17,19 @@
 
 
         <div class="row">
+
             <div class="col-12 text-center poppins font-weight-bold fs-3 mb-4">
-                Sócios
+
+                <?= $socios["titulo"]; ?>
+
             </div>
 
             <div class="col-12 poppins">
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis? 
-                    Culpa quasi, quam animi neque aliquam sed sint recusandae quae! Ex reprehenderit perspiciatis 
-                    ullam, culpa fugiat est? Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis? 
-                    Culpa quasi, quam animi neque aliquam sed sint recusandae quae! Ex reprehenderit perspiciatis
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis? 
-                    Culpa quasi, quam animi neque aliquam sed sint recusandae quae! Ex reprehenderit perspiciatis 
-                    ullam, culpa fugiat est? Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis? 
-                    Culpa quasi, quam animi neque aliquam sed sint recusandae quae! Ex reprehenderit perspiciatis 
-                    ullam, culpa fugiat est? Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus dolor nobis? 
-                    Culpa quasi, quam animi neque aliquam sed sint recusandae quae! Ex reprehenderit perspiciatis
-                </p>
-
+                <p><?= $socios["texto"]; ?></p>
 
             </div>
+            
         </div>
     </main>
 

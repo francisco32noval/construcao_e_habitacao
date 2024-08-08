@@ -123,7 +123,7 @@ $contactos = getContactos();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "centro_de_ferias") ? "active" : ""; ?>" href="#">centro de férias</a>
+                                    <a class="nav-link upper font_cor poppins px-1 <?= ($menu_atual == "centro_de_ferias") ? "active" : ""; ?>" href="centro_de_ferias.php">centro de férias</a>
                                 </li>
 
                                 <li class="d-block d-lg-none">
