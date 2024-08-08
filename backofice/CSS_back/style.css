@@ -1,0 +1,12 @@
+body *{
+    max-width: 1600px;
+}
+
+.navbar{
+    background-color: rgb(142, 18, 18);
+    height: 100vh;
+}
+
+.navbar a{
+    color: white;
+}
