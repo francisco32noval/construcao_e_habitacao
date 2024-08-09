@@ -11,9 +11,9 @@
 
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="CSS_back/media.css"> -->
-    <link rel="stylesheet" href="../CSS_back/style.css">
+    <link rel="stylesheet" href="CSS_back/style.css">
     <link rel="stylesheet" href="fonts_back/fonts.css">
-    <link rel="stylesheet" href="../CSS_back/const.css">
+    <link rel="stylesheet" href="CSS_back/const.css">
     
 
     <!-- RECAPTCHA -->
@@ -90,8 +90,3 @@
 
     </header>
 
-
-
-
-</body>
-</html>
