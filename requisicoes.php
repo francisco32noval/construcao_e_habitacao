@@ -12,5 +12,6 @@ require_once("helpers/quem_somos_helper.php");
 require_once("helpers/noticias_helper.php");
 require_once("helpers/socios_helper.php");
 require_once("helpers/centro_de_ferias_helper.php");
+require_once("helpers/banners_helper.php");
 
 ?>

@@ -29,16 +29,16 @@ if($form){
         <div class="row">
             <form class="col-12">
 
-                <label for="imagem" class="fs-4 fw-bold">Imagem:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 500px;" value="<?= $quem_somos["imagem"]; ?>">
-                <br>
-                <a target="_blank" href="<?= $url_base; ?>backofice/tinyfilemanager/tinyfilemanager.php?p=">
+                <label for="imagem" class="fw-bold mt-5">Imagem:</label><br>
+                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $quem_somos["imagem"]; ?>">
+                <br><br>
+                <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
                     Gestor de Ficheiros
                 </a>
                 
-                <br><br>
+                <br><br><br><br>
 
-                <label for="texto">Texto:</label><br>
+                <label for="texto" class="fw-bold">Texto:</label><br>
                 <textarea name="texto" id="texto" cols="120" rows="20"><?= $quem_somos["texto"]; ?></textarea>
 
                 <br><br>

@@ -3,6 +3,7 @@
 $carousel = getCarousel();
 $empreendimentos = getEmpreendimentos();
 $contactos = getContactos();
+$banners = getBanners();
 
 ?>
 
@@ -182,11 +183,15 @@ $contactos = getContactos();
 
         <?php else: ?>
 
+            
+
             <div class="row">
                 <div class="col-12 px-0">
-                    <img src="uploads/BannerContactos.png" alt="quem" class="imagem_banner">
+                    <img src="<?= $banners["$menu_atual"]; ?>" alt="<?= $menu_atual; ?>" class="imagem_banner">
                 </div>
             </div>
+
+       
 
         <?php endif; ?>
 
