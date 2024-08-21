@@ -59,13 +59,11 @@ $default_timezone = 'Etc/UTC'; // UTC
 
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
-$root_path = $_SERVER['DOCUMENT_ROOT'] . "/codemaster_9/exercicios/aula_146/exercicio_03_projeto/uploads/";
-// $root_path = $_SERVER['DOCUMENT_ROOT'] . "/codemaster_9_exemplo/uploads/";
+$root_path = $_SERVER['DOCUMENT_ROOT'] . "/construcao_e_habitacao/uploads/";
 
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
-$root_url = '/codemaster_9/exercicios/aula_146/exercicio_03_projeto/uploads/';
-// $root_url = '/codemaster_9_exemplo/uploads/';
+$root_url = '/construcao_e_habitacao/uploads/';
 
 // Server hostname. Can set manually if wrong
 // $_SERVER['HTTP_HOST'].'/folder'
@@ -102,7 +100,7 @@ $favicon_path = '';
 $exclude_items = array();
 
 // Online office Docs Viewer
-// Availabe rules are 'google', 'microsoft' or false
+// Available rules are 'google', 'microsoft' or false
 // Google => View documents using Google Docs Viewer
 // Microsoft => View documents using Microsoft Web Apps Viewer
 // false => disable online doc viewer
@@ -2268,7 +2266,7 @@ function print_external($key) {
 }
 
 /**
- * Verify CSRF TOKEN and remove after cerify
+ * Verify CSRF TOKEN and remove after certified
  * @param string $token
  * @return bool
  */

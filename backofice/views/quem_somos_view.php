@@ -1,11 +1,15 @@
+<?php
 
+$quem_somos = getQuemSomos();
+
+?>
 
 
     <main class="container quem_somos">
 
-        <div class="row">
+        <div class="row mt-5">
 
-            <div class="col-10 offset-3">
+            <div class="col-12">
 
                 <table>
 
@@ -15,10 +19,21 @@
                         <th>Ações</th>
                     </tr>
 
+
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+
+                        <td>
+                            <img src="<?= $quem_somos["imagem"]; ?>" alt="<?= $quem_somos["imagem"]; ?>" width="200">
+                        </td>
+
+                        <td>
+                            <?= substr($quem_somos["texto"], 0, 50); ?> 
+                        </td>
+
+                        <td>
+                            <a href="quem_somos_editar.php?id=<?= $quem_somos["id"]; ?>"><button type="button" class="btn editar">Editar</button></a>
+                        </td>
+
                     </tr>
 
                 </table>

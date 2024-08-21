@@ -4,31 +4,18 @@ body *{
 
 .navbar{
     background-color: rgb(249, 150, 59);
-    height: 100vh;
 }
 
 .navbar a{
     color: rgb(51, 51, 51);
 }
 
+
+
 .navbar a:hover{
     color: white;
 }
 
-
-.quem_somos *{
-    border: 1px solid black;
-}
-
-.quem_somos{
-    position: fixed;
-    top: 50px;
-    left: 0;
-}
-
-.quem_somos > div{
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
+.active{
+    color: white !important;
 }

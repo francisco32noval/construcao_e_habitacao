@@ -1,3 +1,9 @@
+<?php
+
+if(!verificarLogado()){header("Location: index.php");}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -20,7 +26,11 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <!-- LOCAL JS -->
-    <!-- <script src="js/main.js" defer></script> -->
+    <script src="js/main.js" defer></script>
+
+
+    <!-- EDITOR DE TEXTO -->
+    <script src="https://cdn.tiny.cloud/1/9ljc7z16k4furqkx7hw5zcy7mx224ozfflzvyih4q96tk95y/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
 </head>
 <body>
@@ -30,59 +40,57 @@
 
         <div class="row p-0">
 
-            <div class="col-2 p-0">
+            <div class="col-12 p-0">
 
-                <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
 
-                    <div class="container-fluid d-flex flex-column justify-content-center">
+                    <a class="navbar-brand" href="#">Tripeira</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <a class="navbar-brand upper poppins mb-5" href="#">tripeira</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <div class="collapse navbar-collapse d-flex flex-column" id="navbarNav">
+                        <ul class="navbar-nav m-auto">
 
-                            <ul class="navbar-nav d-flex flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "home") ? "active" : ""; ?>" href="#">home</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link text-white upper poppins" href="#">home</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "quem_somos") ? "active" : ""; ?>" href="quem_somos.php">quem somos</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link upper poppins" href="#">quem somos</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="#">socios</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link upper poppins" href="#">socios</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "noticias") ? "active" : ""; ?>" href="#">noticias</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link upper poppins" href="#">noticias</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "destaques") ? "active" : ""; ?>" href="#">destaques</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link upper poppins" href="#">destaques</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "empreendimentos") ? "active" : ""; ?>" href="#">empreendimentos</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link upper poppins" href="#">empreendimentos</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "centro_de_ferias") ? "active" : ""; ?>" href="#">centro de férias</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link upper poppins" href="#">centro de férias</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "contactos") ? "active" : ""; ?>" href="#">contactos</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link upper poppins" href="#">contactos</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
+                        </ul>
+                    
                     </div>
-                </nav>
+                </div>
+            </nav>
 
             </div>
 

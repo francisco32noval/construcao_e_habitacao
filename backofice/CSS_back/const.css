@@ -17,8 +17,19 @@
 }
 
 table, th, td{
+    text-align: center;
     border: 2px dotted rgb(51, 51, 51);
     border-collapse: collapse;
     margin: auto;
     padding: 10px 25px;
-  }
+}
+
+
+.editar{
+    border: 2px solid var(--laranja_f9);
+}
+
+.editar:hover{
+    border: 2px solid var(--cinza_33);
+    color: var(--laranja_f9);
+}
