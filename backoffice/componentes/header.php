@@ -63,7 +63,7 @@ if(!verificarLogado()){header("Location: index.php");}
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="#">sócios</a>
+                                <a class="nav-link upper poppins <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="socios.php">sócios</a>
                             </li>
 
                             <li class="nav-item">

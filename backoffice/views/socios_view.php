@@ -1,6 +1,6 @@
 <?php
 
-$quem_somos = getQuemSomos();
+$socios = getSocios();
 
 ?>
 
@@ -14,7 +14,7 @@ $quem_somos = getQuemSomos();
                 <table>
 
                     <tr>
-                        <th>Imagem</th>
+                        <th>Título</th>
                         <th>Texto</th>
                         <th>Ações</th>
                     </tr>
@@ -23,16 +23,17 @@ $quem_somos = getQuemSomos();
                     <tr>
 
                         <td>
-                            <img src="<?= $quem_somos["imagem"]; ?>" alt="<?= $quem_somos["imagem"]; ?>" width="200">
+                            <?= $socios["titulo"]; ?>
                         </td>
 
                         <td>
-                            <?= substr($quem_somos["texto"], 0, 50); ?> 
+                            <?= $socios["texto"]; ?> 
                         </td>
 
                         <td>
-                            <a href="quem_somos_editar.php?id=<?= $quem_somos["id"]; ?>"><button type="button" class="btn editar">Editar</button></a>
+                            <a href="socios_editar.php?id=<?= $socios["id"]; ?>"><button type="button" class="btn editar">Editar</button></a>
                         </td>
+
 
                     </tr>
 

@@ -18,7 +18,7 @@
 
 table, th, td{
     text-align: center;
-    border: 2px dotted rgb(51, 51, 51);
+    border: 5px double var(--laranja_f9);
     border-collapse: collapse;
     margin: auto;
     padding: 10px 25px;
@@ -27,6 +27,7 @@ table, th, td{
 
 .editar{
     border: 2px solid var(--laranja_f9);
+    background-color: white;
 }
 
 .editar:hover{

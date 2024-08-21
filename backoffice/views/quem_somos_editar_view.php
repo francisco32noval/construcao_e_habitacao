@@ -43,7 +43,7 @@ if($form){
 
                 <br><br>
 
-                <input type="submit" value="Editar">
+                <input class="btn editar" type="submit" value="Editar">
                 
             </form>
         </div>
