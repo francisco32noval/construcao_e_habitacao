@@ -63,11 +63,11 @@ if(!verificarLogado()){header("Location: index.php");}
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="#">socios</a>
+                                <a class="nav-link upper poppins <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="#">sócios</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "noticias") ? "active" : ""; ?>" href="#">noticias</a>
+                                <a class="nav-link upper poppins <?= ($menu_atual == "noticias") ? "active" : ""; ?>" href="#">notícias</a>
                             </li>
 
                             <li class="nav-item">

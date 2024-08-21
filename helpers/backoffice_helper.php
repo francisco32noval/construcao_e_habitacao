@@ -1,5 +1,10 @@
 <?php
 
+function getBackoffice(){
+  $resultado = selectSQLUnico("SELECT * FROM backoffice");
+  return $resultado;
+}
+
 function fazerLogin($login, $senha){
   $usuario_encontrado = selectSQLUnico("SELECT * FROM backoffice WHERE login='$login' AND senha='$senha'");
   if(!empty($usuario_encontrado)){
