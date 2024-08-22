@@ -59,6 +59,10 @@ if(!verificarLogado()){header("Location: index.php");}
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link upper poppins <?= ($menu_atual == "carousel") ? "active" : ""; ?>" href="carousel.php">carousel</a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a class="nav-link upper poppins <?= ($menu_atual == "quem_somos") ? "active" : ""; ?>" href="quem_somos.php">quem somos</a>
                             </li>
 
@@ -83,7 +87,7 @@ if(!verificarLogado()){header("Location: index.php");}
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "contactos") ? "active" : ""; ?>" href="#">contactos</a>
+                                <a class="nav-link upper poppins <?= ($menu_atual == "contactos") ? "active" : ""; ?>" href="contactos.php">contactos</a>
                             </li>
 
                         </ul>

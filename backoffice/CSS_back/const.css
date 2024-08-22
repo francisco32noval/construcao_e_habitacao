@@ -18,7 +18,7 @@
 
 table, th, td{
     text-align: center;
-    border: 5px double var(--cor_tema);
+    border: 5px ridge var(--cor_tema);
     border-collapse: collapse;
     margin: auto;
     padding: 10px 25px;
