@@ -49,7 +49,7 @@ $destaques = getTodosDestaques();
                             <td>
                                 <a href="destaques_editar.php?id=<?= $d["id"]; ?>"><button type="button" class="btn editar">Editar</button></a>
                                 <br><br>
-                                <a onclick="confirmarApagar()" href="destaques_apagar.php?id=<?= $d["id"]; ?>"><button type="button" class="btn editar">Apagar</button></a>
+                                <a href="destaques_apagar.php?id=<?= $d["id"]; ?>"><button type="button" class="btn editar">Apagar</button></a>
                             </td>
 
                         </tr>
