@@ -26,7 +26,7 @@ if(!verificarLogado()){header("Location: index.php");}
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <!-- LOCAL JS -->
-    <script src="js/main.js" defer></script>
+    <script src="../js/main.js" defer></script>
 
 
     <!-- EDITOR DE TEXTO -->
@@ -55,7 +55,7 @@ if(!verificarLogado()){header("Location: index.php");}
                         <ul class="navbar-nav m-auto">
 
                             <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "home") ? "active" : ""; ?>" href="#">home</a>
+                                <a class="nav-link upper poppins <?= ($menu_atual == "home") ? "active" : ""; ?>" href="home.php">home</a>
                             </li>
 
                             <li class="nav-item">
@@ -71,7 +71,7 @@ if(!verificarLogado()){header("Location: index.php");}
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "destaques") ? "active" : ""; ?>" href="#">destaques</a>
+                                <a class="nav-link upper poppins <?= ($menu_atual == "destaques") ? "active" : ""; ?>" href="destaques.php">destaques</a>
                             </li>
 
                             <li class="nav-item">

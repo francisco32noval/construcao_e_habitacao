@@ -13,7 +13,7 @@ body *{
 
 
 .navbar{
-    background-color: rgb(249, 150, 59);
+    background-color: var(--cor_tema);
 }
 
 .navbar a{
@@ -34,7 +34,7 @@ body *{
 
 .gestor{
     text-decoration: none;
-    border: 1px solid var(--laranja_f9);
+    border: 1px solid var(--cor_tema);
     color: var(--cinza_33);
     padding: 10px;
     border-radius: 15px;
@@ -43,5 +43,5 @@ body *{
 
 .gestor:hover{
     border: 1px solid var(--cinza_33);
-    color: var(--laranja_f9);
+    color: var(--cor_tema);
 }

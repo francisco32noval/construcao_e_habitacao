@@ -3,7 +3,7 @@
     --cinza_33_op: #333333e8;
     --cinza_33_op75: #333333bf;
     --branco_ff: #FFFFFF;
-    --laranja_f9: #F9963B;
+    --cor_tema: #ef0e0e;
     --preto_op: #000000cc;
 }
 
@@ -18,7 +18,7 @@
 
 table, th, td{
     text-align: center;
-    border: 5px double var(--laranja_f9);
+    border: 5px double var(--cor_tema);
     border-collapse: collapse;
     margin: auto;
     padding: 10px 25px;
@@ -26,11 +26,11 @@ table, th, td{
 
 
 .editar{
-    border: 2px solid var(--laranja_f9);
+    border: 2px solid var(--cor_tema);
     background-color: white;
 }
 
 .editar:hover{
     border: 2px solid var(--cinza_33);
-    color: var(--laranja_f9);
+    color: var(--cor_tema);
 }

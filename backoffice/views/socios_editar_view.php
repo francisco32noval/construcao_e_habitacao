@@ -22,7 +22,7 @@ if($form){
 
         <div class="row">
             <div class="col-12">
-            <h3>Sócios</h3>
+                <h3>Sócios - Editar</h3>
             </div>
         </div>
 
@@ -30,7 +30,7 @@ if($form){
             <form class="col-12">
 
                 <label for="titulo" class="fw-bold">Título:</label><br>
-                <textarea name="titulo" id="titulo" cols="12" rows="5"><?= $socios["titulo"]; ?></textarea>
+                <input type="text" name="titulo" id="titulo" required style="width: 50%;" value="<?= $socios["titulo"]; ?>">
                 
                 <br><br><br><br>
 
