@@ -7,6 +7,13 @@ $socios = getSocios();
 
     <main class="container quem_somos">
 
+
+        <div class="row my-4">
+            <div class="col-12 text-center">
+                <h3>Sócios</h3>
+            </div>
+        </div>
+
         <div class="row mt-5">
 
             <div class="col-12">

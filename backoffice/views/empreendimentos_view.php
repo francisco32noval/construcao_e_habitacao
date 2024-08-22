@@ -17,7 +17,7 @@ $empreendimentos = getEmpreendimentos();
 
             <div class="col-12 text-center">
 
-                <a href="destaques_novo.php"><button class="btn editar">Novo Empreendimento</button></a><br><br>
+                <a href="empreendimentos_novo.php"><button class="btn editar">Novo Empreendimento</button></a><br><br>
 
                 <table>
 
