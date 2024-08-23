@@ -42,7 +42,7 @@ $centro_ferias = getCentroDeFerias();
                         </td>
 
                         <td>
-                            <a href="centro_de_ferias_editar.php?id=<?= $quem_somos["id"]; ?>"><button type="button" class="btn editar">Editar</button></a>
+                            <a href="centro_de_ferias_editar.php?id=<?= $centro_ferias["id"]; ?>"><button type="button" class="btn editar">Editar</button></a>
                         </td>
 
                     </tr>
