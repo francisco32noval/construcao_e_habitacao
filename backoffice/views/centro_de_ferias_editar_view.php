@@ -1,18 +1,21 @@
 <?php
 
-$cf = getCentroDeFerias();
-
-$form = isset($_GET["imagem_principal"]) && isset($_GET["titulo"]) && isset($_GET["texto"]) && isset($_GET["cf_img_1"]) && isset($_GET["cf_img_2"]) && isset($_GET["cf_img_3"]) && isset($_GET["cf_img_4"]);
+$form = isset($_GET["id"]);
 if($form){
-    $imagem_principal = $_GET["imagem_principal"];
-    $titulo = $_GET["titulo"];
-    $texto = $_GET["texto"];
-    $cf_img_1 = $_GET["cf_img_1"];
-    $cf_img_2 = $_GET["cf_img_2"];
-    $cf_img_3 = $_GET["cf_img_3"];
-    $cf_img_4 = $_GET["cf_img_4"];
-    iduSQL("UPDATE centro_de_ferias SET imagem_principal='$imagem_principal', titulo='$titulo', texto='$texto', cf_img_1='$cf_img_1', cf_img_2='$cf_img_2', cf_img_3='$cf_img_3', cf_img_4='$cf_img_4',");
-    header("Location: centro_de_ferias.php");
+    $id = $_GET["id"];
+    $cf = getCentroDeFerias($id);
+    $form_2 = isset($_GET["titulo"]) && isset($_GET["texto"]) && isset($_GET["imagem_principal"]) && isset($_GET["cf_img_1"]) && isset($_GET["cf_img_2"]) && isset($_GET["cf_img_3"]) && isset($_GET["cf_img_4"]);
+    if($form_2){
+        $titulo = $_GET["titulo"];
+        $texto = $_GET["texto"];
+        $imagem_principal = $_GET["imagem_principal"];
+        $cf_img_1 = $_GET["cf_img_1"];
+        $cf_img_2 = $_GET["cf_img_2"];
+        $cf_img_3 = $_GET["cf_img_3"];
+        $cf_img_4 = $_GET["cf_img_4"];
+        iduSQL("UPDATE centro_de_ferias SET titulo='$titulo', texto='$texto', imagem_principal='$imagem_principal', cf_img_1='$cf_img_1', cf_img_2='$cf_img_2', cf_img_3='$cf_img_3', cf_img_4='$cf_img_4' WHERE id=$id");
+        header("Location: centro_de_ferias.php");
+    }
 }
 
 ?>
@@ -33,6 +36,8 @@ if($form){
 
         <div class="row">
             <form class="col-12">
+
+                <input type="hidden" name="id" value="<?= $id; ?>">
 
                 <label for="titulo" class="fw-bold">Título:</label><br>
                 <input type="text" name="titulo" id="titulo" required style="width: 50%;" value="<?= $cf["titulo"]; ?>">
