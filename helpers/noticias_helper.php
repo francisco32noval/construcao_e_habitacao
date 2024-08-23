@@ -18,7 +18,10 @@ function getTotalPaginasNoticias(){
   return ceil($resultado["Count(*)"] / $elementos_por_pagina);
 }
 
-
+function getNoticiasEspecifica($id){
+  $resultado = selectSQLUnico("SELECT * FROM noticias WHERE id=$id");
+  return $resultado;
+}
 
 
 ?>
