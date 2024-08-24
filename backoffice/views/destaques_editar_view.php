@@ -12,8 +12,10 @@ if($form){
         $imagem = $_GET["imagem"];
         iduSQL("UPDATE destaques SET titulo='$titulo', mostrar_na_home='$mostrar_na_home', texto='$texto', imagem='$imagem' WHERE id=$id");
         header("Location: destaques.php");
+        ob_end_flush();
     }
 }
+
 
 ?>
 

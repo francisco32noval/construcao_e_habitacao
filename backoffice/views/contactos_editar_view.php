@@ -11,6 +11,7 @@ if($form){
     $email_formulario = $_GET["email_formulario"];
     iduSQL("UPDATE contactos SET telefone='$telefone', morada='$morada', email='$email', link_facebook='$link_facebook', email_formulario='$email_formulario'");
     header("Location: contactos.php");
+    ob_end_flush();
 }
 
 ?>

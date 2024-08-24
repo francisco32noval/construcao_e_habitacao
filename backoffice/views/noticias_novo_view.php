@@ -5,8 +5,9 @@ if($form){
     $titulo = $_GET["titulo"];
     $texto = $_GET["texto"];
     $imagem = $_GET["imagem"];
-    iduSQL("INSERT INTO destaques (titulo, mostrar_na_home, texto, imagem) VALUES ('$titulo', '$texto', '$imagem')");
-    header("Location: destaques.php");
+    iduSQL("INSERT INTO noticias (titulo, texto, imagem) VALUES ('$titulo', '$texto', '$imagem')");
+    header("Location: noticias.php");
+    ob_end_flush();
 }
 
 ?>

@@ -53,7 +53,7 @@ $empreendimentos = getEmpreendimentos();
                             <td>
                                 <a href="empreendimentos_editar.php?id=<?= $e["id"]; ?>"><button type="button" class="btn editar">Editar</button></a>
                                 <br><br>
-                                <!-- <a href="empreendimentos_apagar.php?id=<?= $d["id"]; ?>"><button type="button" class="btn editar">Apagar</button></a> -->
+                                <a href="empreendimentos_apagar.php?id=<?= $e["id"]; ?>"><button type="button" class="btn editar">Apagar</button></a>
                             </td>
 
                         </tr>

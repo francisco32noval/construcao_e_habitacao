@@ -9,8 +9,9 @@ if($form){
         $titulo = $_GET["titulo"];
         $texto = $_GET["texto"];
         $imagem = $_GET["imagem"];
-        iduSQL("UPDATE destaques SET titulo='$titulo', texto='$texto', imagem='$imagem' WHERE id=$id");
+        iduSQL("UPDATE noticias SET titulo='$titulo', texto='$texto', imagem='$imagem' WHERE id=$id");
         header("Location: noticias.php");
+        ob_end_flush();
     }
 }
 

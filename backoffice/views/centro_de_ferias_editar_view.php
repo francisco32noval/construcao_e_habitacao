@@ -15,6 +15,7 @@ if($form){
         $cf_img_4 = $_GET["cf_img_4"];
         iduSQL("UPDATE centro_de_ferias SET titulo='$titulo', texto='$texto', imagem_principal='$imagem_principal', cf_img_1='$cf_img_1', cf_img_2='$cf_img_2', cf_img_3='$cf_img_3', cf_img_4='$cf_img_4' WHERE id=$id");
         header("Location: centro_de_ferias.php");
+        ob_end_flush();
     }
 }
 

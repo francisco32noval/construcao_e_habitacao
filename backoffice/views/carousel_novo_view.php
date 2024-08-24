@@ -5,6 +5,7 @@ if($form){
   $imagem = $_GET["imagem"];
   iduSQL("INSERT INTO carousel (imagem) VALUES ('$imagem')");
   header("Location: carousel.php");
+  ob_end_flush();
 }
 
 ?>

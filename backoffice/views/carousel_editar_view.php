@@ -9,6 +9,7 @@ if($form){
         $imagem = $_GET["imagem"];
         iduSQL("UPDATE carousel SET imagem='$imagem' WHERE id=$id");
         header("Location: carousel.php");
+        ob_end_flush();
     }
 }
 

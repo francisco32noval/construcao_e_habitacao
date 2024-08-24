@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 if(!verificarLogado()){header("Location: index.php");}
 
 ?>
@@ -42,63 +42,67 @@ if(!verificarLogado()){header("Location: index.php");}
 
             <div class="col-12 p-0">
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
 
-                    <a class="navbar-brand" href="#">Tripeira</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <a class="navbar-brand" href="#">Tripeira</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <ul class="navbar-nav m-auto">
+                            <ul class="navbar-nav m-auto">
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "home") ? "active" : ""; ?>" href="home.php">home</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "home") ? "active" : ""; ?>" href="home.php">home</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "carousel") ? "active" : ""; ?>" href="carousel.php">carousel</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "carousel") ? "active" : ""; ?>" href="carousel.php">carousel</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "quem_somos") ? "active" : ""; ?>" href="quem_somos.php">quem somos</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "banners") ? "active" : ""; ?>" href="banners.php">banners</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="socios.php">sócios</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "quem_somos") ? "active" : ""; ?>" href="quem_somos.php">quem somos</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "noticias") ? "active" : ""; ?>" href="noticias.php">notícias</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "socios") ? "active" : ""; ?>" href="socios.php">sócios</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "destaques") ? "active" : ""; ?>" href="destaques.php">destaques</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "noticias") ? "active" : ""; ?>" href="noticias.php">notícias</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "empreendimentos") ? "active" : ""; ?>" href="empreendimentos.php">empreendimentos</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "destaques") ? "active" : ""; ?>" href="destaques.php">destaques</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "centro_de_ferias") ? "active" : ""; ?>" href="centro_de_ferias.php">centro de férias</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "empreendimentos") ? "active" : ""; ?>" href="empreendimentos.php">empreendimentos</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins <?= ($menu_atual == "contactos") ? "active" : ""; ?>" href="contactos.php">contactos</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "centro_de_ferias") ? "active" : ""; ?>" href="centro_de_ferias.php">centro de férias</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link upper poppins" href="logout.php">sair</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins <?= ($menu_atual == "contactos") ? "active" : ""; ?>" href="contactos.php">contactos</a>
+                                </li>
 
-                        </ul>
-                    
+                                <li class="nav-item">
+                                    <a class="nav-link upper poppins" href="logout.php">sair</a>
+                                </li>
+
+                            </ul>
+                        
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
 
             </div>
 
