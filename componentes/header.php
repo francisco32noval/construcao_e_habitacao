@@ -50,11 +50,11 @@ $banners = getBanners();
 
                 <!-- NAVBAR -->
 
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg" id="navbar">
 
                     <div class="container-fluid pe-5 d-flex justify-content-center">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button id="menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -110,7 +110,7 @@ $banners = getBanners();
 
                                         <?php foreach($empreendimentos as $e): ?>
 
-                                            <li><a class="dropdown-item text-white upper poppins" href="empreendimentos.php?id=<?= $e["id"]; ?>"><?= $e["titulo"]; ?></a></li>
+                                            <li><a id="tamanho_emp" class="dropdown-item text-white upper poppins" href="empreendimentos.php?id=<?= $e["id"]; ?>"><?= $e["titulo"]; ?></a></li>
                                             <li><hr class="dropdown-divider <?= ($e == end($empreendimentos)) ? "d-none" : ""; ?>"></li>
 
                                         <?php endforeach; ?>

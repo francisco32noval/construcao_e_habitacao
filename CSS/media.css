@@ -79,6 +79,7 @@
 
     .dropdown-menu{
         background-color: white !important;
+        width: 100% !important;
     }
 
 
@@ -101,10 +102,13 @@
         width: 75%;
     }
 
-    
 
-
-
+    #tamanho_emp{
+        width: 75% !important;
+        margin: auto;
+        text-align: start !important;
+        padding: 7px 0px !important;
+    }
 
 
 

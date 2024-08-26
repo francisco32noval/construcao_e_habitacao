@@ -14,9 +14,9 @@ if($form){
   $email_dono_site = getContactos();
   $email_dono_site = $email_dono_site["email_formulario"];
 
-  
-  
-  
+
+
+
   $g_recaptcha_response = $_POST["g-recaptcha-response"];
   $chave_secreta = "meta sua chave secreta aqui";
   $resposta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$chave_secreta&response=$g_recaptcha_response");
