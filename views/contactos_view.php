@@ -133,7 +133,7 @@
 
                     <br><br>
                     
-                    <div class="text-end"><input type="submit" value="Enviar" class="w-25 rounded-5"></div>
+                    <div class="text-end"><input type="submit" value="Enviar" class="w-25 rounded-5 "></div>
 
                     
                 </form>

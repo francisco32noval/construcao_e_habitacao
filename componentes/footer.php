@@ -88,7 +88,7 @@
                         <a href="#" class="poppins upper">sócios</a>
                         <a href="#" class="poppins upper">notícias</a>
                         <a href="#" class="poppins upper">destaques</a>
-                        <a href="#" class="poppins upper">empreendedimentos</a>
+                        <a href="#" class="poppins upper" onclick="abrirEmpreendimentos()">empreendedimentos</a>
                         <a href="#" class="poppins upper">centro de férias</a>
                         <a href="#" class="poppins upper">contactos</a>
                     </div>

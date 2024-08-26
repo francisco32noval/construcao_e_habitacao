@@ -43,8 +43,8 @@ if($form){
 
                 <br>
 
-                <label for="imagem" class="fw-bold mt-5">Quem Somos:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $banner_especifico["quem_somos"]; ?>">
+                <label for="quem_somos" class="fw-bold mt-5">Quem Somos:</label><br>
+                <input type="text" name="quem_somos" id="quem_somos" required style="width: 50%;" value="<?= $banner_especifico["quem_somos"]; ?>">
                 <br><br>
                 <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
                     Gestor de Ficheiros
@@ -52,18 +52,8 @@ if($form){
                 
                 <br><br>
 
-                <label for="imagem" class="fw-bold mt-5">Sócios:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $banner_especifico["socios"]; ?>">
-                <br><br>
-                <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
-                    Gestor de Ficheiros
-                </a>
-                
-                <br><br>
-
-
-                <label for="imagem" class="fw-bold mt-5">Notícias:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $banner_especifico["noticias"]; ?>">
+                <label for="socios" class="fw-bold mt-5">Sócios:</label><br>
+                <input type="text" name="socios" id="socios" required style="width: 50%;" value="<?= $banner_especifico["socios"]; ?>">
                 <br><br>
                 <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
                     Gestor de Ficheiros
@@ -72,8 +62,8 @@ if($form){
                 <br><br>
 
 
-                <label for="imagem" class="fw-bold mt-5">Destaques:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $banner_especifico["destaques"]; ?>">
+                <label for="noticias" class="fw-bold mt-5">Notícias:</label><br>
+                <input type="text" name="noticias" id="noticias" required style="width: 50%;" value="<?= $banner_especifico["noticias"]; ?>">
                 <br><br>
                 <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
                     Gestor de Ficheiros
@@ -82,8 +72,8 @@ if($form){
                 <br><br>
 
 
-                <label for="imagem" class="fw-bold mt-5">Empreendimentos:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $banner_especifico["empreendimentos"]; ?>">
+                <label for="destaques" class="fw-bold mt-5">Destaques:</label><br>
+                <input type="text" name="destaques" id="destaques" required style="width: 50%;" value="<?= $banner_especifico["destaques"]; ?>">
                 <br><br>
                 <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
                     Gestor de Ficheiros
@@ -92,8 +82,8 @@ if($form){
                 <br><br>
 
 
-                <label for="imagem" class="fw-bold mt-5">Centro de Férias:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $banner_especifico["centro_de_ferias"]; ?>">
+                <label for="empreendimentos" class="fw-bold mt-5">Empreendimentos:</label><br>
+                <input type="text" name="empreendimentos" id="empreendimentos" required style="width: 50%;" value="<?= $banner_especifico["empreendimentos"]; ?>">
                 <br><br>
                 <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
                     Gestor de Ficheiros
@@ -102,8 +92,18 @@ if($form){
                 <br><br>
 
 
-                <label for="imagem" class="fw-bold mt-5">Contactos:</label><br>
-                <input type="text" name="imagem" id="imagem" required style="width: 50%;" value="<?= $banner_especifico["contactos"]; ?>">
+                <label for="centro_de_ferias" class="fw-bold mt-5">Centro de Férias:</label><br>
+                <input type="text" name="centro_de_ferias" id="centro_de_ferias" required style="width: 50%;" value="<?= $banner_especifico["centro_de_ferias"]; ?>">
+                <br><br>
+                <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
+                    Gestor de Ficheiros
+                </a>
+                
+                <br><br>
+
+
+                <label for="contactos" class="fw-bold mt-5">Contactos:</label><br>
+                <input type="text" name="contactos" id="contactos" required style="width: 50%;" value="<?= $banner_especifico["contactos"]; ?>">
                 <br><br>
                 <a class="gestor" target="_blank" href="<?= $url_base; ?>backoffice/tinyfilemanager/tinyfilemanager.php?p=">
                     Gestor de Ficheiros
