@@ -121,7 +121,7 @@
 
                         </div>
 
-                        <div class="col-5">
+                        <div class="col-12 col-lg-5">
 
                             <div class="d-flex justify-content-center">
                                 <div class="g-recaptcha" data-sitekey="meta sua chave do site aqui"><div><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-h7jgx4ukr3x8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=meta%20sua%20chave%20do%20site%20aqui&amp;co=aHR0cDovL2xvY2FsaG9zdDo4MA..&amp;hl=pt-PT&amp;v=Xv-KF0LlBu_a0FJ9I5YSlX5m&amp;size=normal&amp;cb=m3prtrvo9f9m"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
@@ -133,7 +133,7 @@
 
                     <br><br>
                     
-                    <div class="text-end"><input type="submit" value="Enviar" class="w-25 rounded-5 "></div>
+                    <div class="text-end"><input type="submit" value="Enviar" class="w-25 rounded-5 enviar"></div>
 
                     
                 </form>
