@@ -34,7 +34,7 @@ $banners = getBanners();
 
 </head>
 
-<body onload="getScroll('<?= $menu_atual; ?>')">
+<body>
 
     <!-- HEADER -->
 
@@ -196,3 +196,5 @@ $banners = getBanners();
         <?php endif; ?>
 
     </header>
+
+    

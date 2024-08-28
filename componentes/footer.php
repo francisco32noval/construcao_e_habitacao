@@ -1,4 +1,5 @@
     <!-- FOOTER -->
+    
 
     <footer class="container-fluid">
 
@@ -107,6 +108,20 @@
         </div>
 
     </footer>
+
+
+    <script>
+    function getScroll(menu_atual) {
+        if (menu_atual !== "home") {
+            document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    window.addEventListener('load', function() {
+        const add_scroll = "<?= $menu_atual;?>" 
+        getScroll(add_scroll);
+    });
+    </script>
 
 
 
